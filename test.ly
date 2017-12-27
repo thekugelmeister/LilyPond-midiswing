@@ -34,14 +34,14 @@ testmusic = \ba \relative c' {
 \score
 {
   \keepWithTag #'layout
-  \new Staff << \global \testmusic >>
+  \new Staff << \global \mark "Original" \testmusic >>
   \layout {}
 }
 
 \score
 {
   \keepWithTag #'midi
-  \new Staff << \global \testmusic >>
+  \new Staff << \global \mark "Beat Aligned"  \testmusic >>
   \layout {}
   \midi {}
 }
